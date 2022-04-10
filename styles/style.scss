@@ -1,0 +1,17 @@
+@import './var/_index.scss';
+@import './mixin/_index.scss';
+@import './section/_nav.scss';
+@import './section/_header.scss';
+@import './section/_rotator.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
