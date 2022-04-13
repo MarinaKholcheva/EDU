@@ -1,0 +1,9 @@
+@mixin subtext ($color: rgba(51, 51, 51, 0.501557)) {
+    font-family: $RHT;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: $color;
+     
+}
