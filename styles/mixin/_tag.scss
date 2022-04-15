@@ -1,0 +1,13 @@
+@mixin tag ($background: #50c4ee, $color: #ffffff) {
+    background: $background;
+    border-radius: 24px;
+    font-family: $RHD;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color; 
+    padding: 2px 12px 2px 12px;
+}

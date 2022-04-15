@@ -27,18 +27,7 @@
     margin-bottom: 126px;
   }
   &__slide-tag {
-    background: #50c4ee;
-    border-radius: 24px;
-    width: 96px;
-    height: 28px;
-    font-family: $RHD;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 28px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #ffffff;
+    @include tag;
   }
   .social {
     width: 160px;
