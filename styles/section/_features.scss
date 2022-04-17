@@ -1,0 +1,26 @@
+.features {
+    background: $Light-grey;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    position: relative;
+    
+    &::after {
+        width: 305px;
+        height: 100%;
+        background: #ffffff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        content: "";
+        z-index: 0;
+      }
+      .container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+      &__text-block {
+          width: calc((100% / 12) * 5);
+      }
+}

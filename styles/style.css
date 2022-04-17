@@ -569,6 +569,8 @@
       grid-template-columns: repeat(3, 370px);
   grid-gap: 30px;
   margin-bottom: 80px;
+  position: relative;
+  z-index: 1;
 }
 
 .service__block {
@@ -746,6 +748,48 @@
 
 .service__button:active {
   background: cornsilk;
+}
+
+.service__deco {
+  position: absolute;
+  bottom: 152px;
+  right: -68px;
+  z-index: 0;
+}
+
+.features {
+  background: #F1F0FF;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  position: relative;
+}
+
+.features::after {
+  width: 305px;
+  height: 100%;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  content: "";
+  z-index: 0;
+}
+
+.features .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features__text-block {
+  width: calc((100% / 12) * 5);
 }
 
 * {
