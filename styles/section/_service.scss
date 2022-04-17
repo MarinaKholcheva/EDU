@@ -8,13 +8,8 @@
     text-align: center;
   }
   &__title {
-    font-family: $RHD;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 64px;
+    @include title;
     text-align: center;
-    color: #333333;
     margin-bottom: 52px;
   }
   &__nav {
@@ -154,6 +149,8 @@
     @include button;
   }
   &__deco {
+    width: 176px;
+    height: 176px;
     position: absolute;
     bottom: 152px;
     right: -68px;
