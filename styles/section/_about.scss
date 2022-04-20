@@ -45,12 +45,7 @@
     margin-bottom: 18px;
   }
   &__title {
-    font-family: "Red Hat Display";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 64px;
-    color: #333333;
+    @include title;
     margin-bottom: 28px;
   }
   &__slogan {

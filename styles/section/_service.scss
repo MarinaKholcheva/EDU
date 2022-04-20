@@ -8,13 +8,8 @@
     text-align: center;
   }
   &__title {
-    font-family: $RHD;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 64px;
+    @include title;
     text-align: center;
-    color: #333333;
     margin-bottom: 52px;
   }
   &__nav {
@@ -47,6 +42,8 @@
     grid-template-columns: repeat(3, 370px);
     grid-gap: 30px;
     margin-bottom: 80px;
+    position: relative;
+    z-index: 1;
   }
   &__block {
     background: #f1f0ff;
@@ -64,6 +61,8 @@
   }
   &__img {
     width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
     object-fit: cover;
     height: 304px;
     position: absolute;
@@ -95,7 +94,6 @@
   }
   &__text-block {
     width: 100%;
-    background: #f1f0ff;
     border-radius: 20px;
     margin-top: 23px;
     margin-bottom: 38px;
@@ -150,5 +148,13 @@
   }
   &__button {
     @include button;
+  }
+  &__deco {
+    width: 176px;
+    height: 176px;
+    position: absolute;
+    bottom: 152px;
+    right: -68px;
+    z-index: 0;
   }
 }

@@ -6,6 +6,8 @@
 @import './section/_benefits.scss';
 @import './section/_about.scss';
 @import './section/_service.scss';
+@import './section/_features.scss';
+@import './section/_footer.scss';
 
 * {
     margin: 0;
@@ -17,4 +19,25 @@
     width: 1170px;
     margin: 0 auto;
     position: relative;
+}
+
+.social {
+    width: 160px;
+    height: 48px;
+    display: flex;
+    a {
+      margin: auto;
+    }
+
+    &__link {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      mix-blend-mode: normal;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      margin-left: 8px;
+    }
 }
