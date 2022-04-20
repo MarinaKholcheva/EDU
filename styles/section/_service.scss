@@ -61,6 +61,8 @@
   }
   &__img {
     width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
     object-fit: cover;
     height: 304px;
     position: absolute;
@@ -92,7 +94,6 @@
   }
   &__text-block {
     width: 100%;
-    background: #f1f0ff;
     border-radius: 20px;
     margin-top: 23px;
     margin-bottom: 38px;
