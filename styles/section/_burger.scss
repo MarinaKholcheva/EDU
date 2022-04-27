@@ -1,0 +1,108 @@
+.burger {
+  display: none;
+  background: $Light-grey;
+  padding-top: 38px;
+  padding-bottom: 108px;
+  position: fixed;
+    overflow: hidden;
+    width: 100%;
+    z-index: 99;
+  &--close {
+      top: -1000px;
+  }
+  &__container-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 19px;
+  }
+  &__close {
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+  }
+  &__container-bottom {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+  }
+  &__teachers {
+    width: calc((100% / 12) * 3);
+    margin-left: calc(100% / 12);
+  }
+  &__img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 47px;
+  }
+  &__link {
+    font-family: $RHD;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__link img {
+    margin-left: 19px;
+  }
+  &__list {
+    list-style-type: none;
+  }
+  &__item a {
+    text-decoration: none;
+    @include subtext;
+    margin-bottom: 10px;
+  }
+  &__courses {
+    width: calc((100% / 12) * 4);
+  }
+  &__learning {
+    width: calc((100% / 12) * 3);
+    margin-right: calc(100% / 12);
+  }
+  &__form {
+    display: block;
+    width: 230px;
+    box-sizing: border-box;
+    border-radius: 24px;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    height: 48px;
+    background: #ffffff;
+    border: 1px solid #dadada;
+    box-sizing: border-box;
+    border-radius: 24px;
+    @include subtext;
+    padding-left: 24px;
+    margin-bottom: 16px;
+  }
+  &__button {
+    @include button(
+      $background: $Green,
+      $color: #ffffff,
+      $hover-background: #55a85a
+    );
+  }
+  &__deco1 {
+    position: absolute;
+    top: 67px;
+    left: -88px;
+  }
+  &__deco2 {
+    position: absolute;
+    bottom: -70px;
+    right: 29px;
+  }
+}
