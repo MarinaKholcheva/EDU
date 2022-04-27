@@ -2,6 +2,7 @@
   background: #6b5cf6;
   padding-bottom: 96px;
   padding-top: 128px;
+  overflow: hidden;
 
   &__deco1 {
     position: absolute;
@@ -36,4 +37,23 @@
        }
     }
   }
+}
+@media screen and (min-width:560px) and (max-width:768px) {
+  
+  .container {
+    position: relative;
+  }
+  .header{
+    .arrows {
+    position: absolute;
+    bottom: 22px;
+    &--prev {
+      left: 0;
+    }
+    &--next {
+      left: 78px;
+    }
+  }
+  }
+  
 }

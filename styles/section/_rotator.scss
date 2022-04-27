@@ -1,7 +1,8 @@
 .rotator {
   margin: 0 auto;
+  width: calc((100% / 12) * 10);
   &__slide {
-    width: calc((100% / 12) * 10);
+    width: 100%;
     margin: 0 auto;
     padding: 64px 84px 80px 100px;
     overflow: hidden;
@@ -14,6 +15,7 @@
   &__slide-img {
     position: absolute;
     width: 100%;
+    height: 100%;
     object-fit: cover;
     top: 0;
     left: 0;
@@ -95,6 +97,39 @@
       width: 24px;
       height: 20px;
       margin: 44px 44px 44px 50px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .rotator {
+    width: calc((100% / 12) * 11);
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 560px) and (max-width: 768px) {
+  .rotator {
+    width: 100%;
+    height: 565px;
+    &__slide {
+      padding: 64px 39px 80px 48px;
+    }
+    &__slide-title {
+      width: 100%;
+      font-size: 68px;
+      line-height: 72px;
+    }
+  }
+  .container {
+    position: relative;
+  }
+  .arrows {
+    position: absolute;
+    bottom: 22px;
+    &--prev {
+      left: 0;
+    }
+    &--next {
+      left: 78px;
     }
   }
 }

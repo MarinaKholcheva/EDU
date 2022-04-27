@@ -8,6 +8,7 @@
 @import './section/_service.scss';
 @import './section/_features.scss';
 @import './section/_footer.scss';
+@import './section/_burger.scss';
 
 * {
     margin: 0;
@@ -40,4 +41,14 @@
       border-radius: 50%;
       margin-left: 8px;
     }
+}
+@media screen and (min-width:768px) and (max-width:1200px) {
+  .container {
+    width: calc(100% - (2 * 27px));
+  }
+}
+@media screen and (min-width:560px) and (max-width:768px) {
+  .container {
+    width: calc(100% - (2 * 14px));
+  }
 }
