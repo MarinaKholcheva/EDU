@@ -1,0 +1,84 @@
+.footer {
+  display: none;
+  background: #6b5cf6;
+  padding-top: 74px;
+  padding-bottom: 38px;
+
+  &__top,
+  &__low {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 65px;
+  }
+  &__info,
+  &__form-container {
+    width: calc((100% / 12) * 4);
+  }
+  &__menu {
+    width: calc((100% / 12) * 3);
+  }
+  &__logo {
+    width: 85px;
+    height: 48px;
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+  &__text-info {
+    @include subtext($color: rgba(255, 255, 255, 0.502972));
+    padding-right: 10px;
+    margin-bottom: 17px;
+  }
+  &__title {
+    @include category;
+    color: #ffffff;
+    margin-bottom: 16px;
+  }
+  &__list {
+    list-style-type: none;
+  }
+  &__item a {
+    text-decoration: none;
+    display: block;
+    @include subtext($color: #ffffff);
+    margin-bottom: 16px;
+  }
+  &__form {
+    width: 100%;
+  }
+  &__input {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #dadada;
+    box-sizing: border-box;
+    border-radius: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    @include subtext;
+    margin-bottom: 16px;
+  }
+  &__button {
+    @include button(
+      $background: $Green,
+      $color: #ffffff,
+      $hover-background: #55a85a,
+      $active-background: cornsilk
+    );
+  }
+  &__low {
+      padding-top: 40px;
+      padding-bottom: 38px;
+  }
+  &__copyright {
+      @include subtext ($color:rgba(255, 255, 255, 0.502972));
+  }
+  &__privacy {
+    @include subtext ($color: #ffffff);
+    text-decoration: none;
+    margin-left: 20px;
+  }
+}

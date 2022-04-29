@@ -1,0 +1,94 @@
+.features {
+  display: none;
+  background: $Light-grey;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  position: relative;
+
+  &::before {
+    width: 305px;
+    height: 100%;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    content: "";
+    z-index: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__img-block {
+      width: calc((100% / 12) * 6);
+    position: relative;
+    z-index: 2;
+  }
+  &__img-main {
+      width: 100%;
+      border-radius: 40px;
+      object-fit: cover;
+      overflow: hidden;
+  }
+  &__deco {
+    position: absolute;
+    top: 124px;
+    right: -72px;
+    z-index: 1;
+  }
+  &__text-block {
+    width: calc((100% / 12) * 5);
+  }
+  &__category {
+    @include category;
+    margin-bottom: 18px;
+  }
+  &__title {
+    @include title;
+    margin-bottom: 28px;
+  }
+  &__slogan {
+    @include text-mini($color: #333333);
+    margin-bottom: 34px;
+  }
+  &__subtext {
+    @include subtext;
+    margin-bottom: 32px;
+  }
+  &__flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &--margin {
+      margin-bottom: 48px;
+    }
+  }
+  &__flex-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin-left: -8px;
+  }
+  &__flex-text {
+    width: calc(((100% / 5) * 4) - 28px);
+  }
+  &__flex-subtitle {
+    font-family: $RHD;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin-bottom: 3px;
+  }
+  &__flex-subtext {
+      @include subtext;
+  }
+}
