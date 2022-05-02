@@ -133,3 +133,17 @@
     }
   }
 }
+@media screen and (max-width: 560px) {
+  .rotator {
+    &__slide-title {
+      font-size: 56px;
+      line-height: 64px;
+      margin: 0 auto;
+      width: calc((100% / 12) * 9);
+    }
+    &__slide {
+      padding-left: 30px;
+      padding-right: 55px;
+    }
+  }
+}

@@ -184,16 +184,53 @@
 @media screen and (max-width: 900px) and (min-width: 560px) {
   .service {
     &__block-section {
-    grid-template-rows: 480px 480px 480px;
+      grid-template-rows: 480px 480px 480px;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
     }
+    &__title {
+      font-size: 40px;
+      line-height: 64px;
+    }
     &__subtitle {
-      
+      max-width: 200px;
       width: calc(100% - (32px * 2));
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    &__nav {
+      width: 80%;
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 560px) {
+  .service {
+    &__block-section {
+      display: block;
+      width: 100%;
+    }
+    &__title {
+      font-size: 40px;
+      line-height: 64px;
+    }
+    &__subtitle {
+      width: calc(100% - (32px * 2));
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    &__nav {
+      width: 80%;
+      text-align: center;
+    }
+    &__text-block {
+      padding-bottom: 32px;
     }
   }
 }
