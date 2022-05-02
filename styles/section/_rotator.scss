@@ -7,10 +7,17 @@
     padding: 64px 84px 80px 100px;
     overflow: hidden;
     border-radius: 65px;
+    height: 656px;
     background-size: cover;
     box-sizing: border-box;
     position: relative;
     z-index: 2;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
   &__slide-img {
     position: absolute;
@@ -26,7 +33,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 126px;
+    
   }
   &__slide-tag {
     @include tag;
@@ -58,12 +65,10 @@
     font-size: 72px;
     line-height: 80px;
     color: #ffffff;
-    margin-bottom: 26px;
     width: calc((100% / 10) * 9);
   }
   &__slide-name {
     @include text-mini;
-    margin-bottom: 72px;
   }
   &__slide-button {
     background: #95d354;
@@ -109,7 +114,6 @@
 @media screen and (min-width: 560px) and (max-width: 768px) {
   .rotator {
     width: 100%;
-    height: 565px;
     &__slide {
       padding: 64px 39px 80px 48px;
     }
@@ -122,24 +126,16 @@
   .container {
     position: relative;
   }
-  .arrows {
-    position: absolute;
-    bottom: 22px;
-    &--prev {
-      left: 0;
-    }
-    &--next {
-      left: 78px;
-    }
-  }
+  
 }
 @media screen and (max-width: 560px) {
   .rotator {
+    width: 100%;
     &__slide-title {
       font-size: 56px;
       line-height: 64px;
       margin: 0 auto;
-      width: calc((100% / 12) * 9);
+      width: 100%;
     }
     &__slide {
       padding-left: 30px;

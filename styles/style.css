@@ -160,13 +160,14 @@
           transform: rotate(180deg);
 }
 
-@media screen and (min-width: 560px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     position: relative;
   }
   .header .arrows {
     position: absolute;
-    bottom: 22px;
+    bottom: -74px;
+    margin-bottom: 0;
   }
   .header .arrows--prev {
     left: 0;
@@ -187,11 +188,26 @@
   padding: 64px 84px 80px 100px;
   overflow: hidden;
   border-radius: 65px;
+  height: 656px;
   background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
   z-index: 2;
+}
+
+.rotator__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
 }
 
 .rotator__slide-img {
@@ -215,7 +231,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 126px;
 }
 
 .rotator__slide-tag {
@@ -269,7 +284,6 @@
   font-size: 72px;
   line-height: 80px;
   color: #ffffff;
-  margin-bottom: 26px;
   width: calc((100% / 10) * 9);
 }
 
@@ -280,7 +294,6 @@
   font-size: 22px;
   line-height: 32px;
   color: #FFFFFF;
-  margin-bottom: 72px;
 }
 
 .rotator__slide-button {
@@ -331,7 +344,6 @@
 @media screen and (min-width: 560px) and (max-width: 768px) {
   .rotator {
     width: 100%;
-    height: 565px;
   }
   .rotator__slide {
     padding: 64px 39px 80px 48px;
@@ -344,24 +356,17 @@
   .container {
     position: relative;
   }
-  .arrows {
-    position: absolute;
-    bottom: 22px;
-  }
-  .arrows--prev {
-    left: 0;
-  }
-  .arrows--next {
-    left: 78px;
-  }
 }
 
 @media screen and (max-width: 560px) {
+  .rotator {
+    width: 100%;
+  }
   .rotator__slide-title {
     font-size: 56px;
     line-height: 64px;
     margin: 0 auto;
-    width: calc((100% / 12) * 9);
+    width: 100%;
   }
   .rotator__slide {
     padding-left: 30px;
@@ -1423,7 +1428,6 @@
 }
 
 .burger {
-  display: none;
   background: #F1F0FF;
   padding-top: 38px;
   padding-bottom: 108px;
@@ -1534,7 +1538,8 @@
 
 .burger__form {
   display: block;
-  width: 230px;
+  width: 100%;
+  max-width: 230px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 24px;
@@ -1592,6 +1597,86 @@
   position: absolute;
   bottom: -70px;
   right: 29px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  .burger__deco1 {
+    display: none;
+  }
+  .burger__teachers {
+    margin-left: 0;
+  }
+  .burger__container-bottom {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 560px) {
+  .burger__deco1 {
+    display: none;
+  }
+  .burger__teachers {
+    margin-left: 0;
+    width: calc((100% / 3) - 40px);
+  }
+  .burger__courses {
+    margin-left: 0;
+    width: calc((100% / 3) - 40px);
+  }
+  .burger__learning {
+    margin-left: 0;
+    width: calc((100% / 3) - 40px);
+  }
+  .burger__container-bottom {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .burger a img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .burger {
+    padding-top: 31px;
+    padding-bottom: 50px;
+    height: calc(100% - 31px - 50px);
+    position: fixed;
+    overflow: scroll;
+  }
+  .burger__deco1 {
+    display: none;
+  }
+  .burger__deco2 {
+    display: none;
+  }
+  .burger__container-bottom {
+    display: block;
+  }
+  .burger__teachers {
+    margin-left: 0;
+    width: 100%;
+  }
+  .burger__courses {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 26px;
+  }
+  .burger__learning {
+    margin-left: 0;
+    width: 100%;
+  }
+  .burger__container-bottom {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .burger a img {
+    display: none;
+  }
 }
 
 * {

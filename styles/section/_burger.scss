@@ -1,5 +1,4 @@
 .burger {
-  display: none;
   background: $Light-grey;
   padding-top: 38px;
   padding-bottom: 108px;
@@ -72,7 +71,8 @@
   }
   &__form {
     display: block;
-    width: 230px;
+    width: 100%;
+    max-width: 230px;
     box-sizing: border-box;
     border-radius: 24px;
   }
@@ -104,5 +104,81 @@
     position: absolute;
     bottom: -70px;
     right: 29px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  .burger {
+    &__deco1 {
+      display: none;
+    }
+    &__teachers {
+      margin-left: 0;
+    }
+    &__container-bottom {
+      justify-content: space-between;
+    }
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 560px) {
+  .burger {
+    &__deco1 {
+      display: none;
+    }
+    &__teachers {
+      margin-left: 0;
+      width: calc((100% / 3) - 40px);
+    }
+    &__courses {
+      margin-left: 0;
+      width: calc((100% / 3) - 40px);
+    }
+    &__learning {
+      margin-left: 0;
+      width: calc((100% / 3) - 40px);
+    }
+    &__container-bottom {
+      justify-content: space-between;
+    }
+    a img {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 560px) {
+  .burger {
+    padding-top: 31px;
+    padding-bottom: 50px;
+    height: calc(100% - 31px - 50px);
+    position: fixed;
+    overflow: scroll;
+    &__deco1 {
+      display: none;
+    }
+    &__deco2 {
+      display: none;
+    }
+    &__container-bottom {
+      display: block;
+    }
+    &__teachers {
+      margin-left: 0;
+      width: 100%;
+    }
+    &__courses {
+      margin-left: 0;
+      width: 100%;
+      margin-bottom: 26px;
+    }
+    &__learning {
+      margin-left: 0;
+      width: 100%;
+      
+    }
+    &__container-bottom {
+      justify-content: space-between;
+    }
+    a img {
+      display: none;
+    }
   }
 }
