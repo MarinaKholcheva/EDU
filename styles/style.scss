@@ -47,7 +47,7 @@
     width: calc(100% - (2 * 27px));
   }
 }
-@media screen and (min-width:560px) and (max-width:768px) {
+@media screen and (max-width:768px) {
   .container {
     width: calc(100% - (2 * 14px));
   }

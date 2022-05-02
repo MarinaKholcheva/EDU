@@ -1,8 +1,9 @@
 .service {
-  display: none;
   background: #ffffff;
   padding-top: 74px;
   padding-bottom: 80px;
+  position: relative;
+  overflow: hidden;
   &__category {
     @include category;
     margin-bottom: 16px;
@@ -157,5 +158,42 @@
     bottom: 152px;
     right: -68px;
     z-index: 0;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  .service {
+    &__block-section {
+      grid-template-rows: 480px 480px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+    &__titile {
+      font-size: 56px;
+      line-height: 64px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      line-height: 32px;
+      width: calc(100% - (32px * 2));
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 560px) {
+  .service {
+    &__block-section {
+    grid-template-rows: 480px 480px 480px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+    &__subtitle {
+      
+      width: calc(100% - (32px * 2));
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
   }
 }

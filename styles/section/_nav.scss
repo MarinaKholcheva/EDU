@@ -68,3 +68,13 @@
     border-radius: 50%;
   }
 }
+@media screen and (max-width: 768px) {
+  .nav {
+    &__form {
+      width: calc((100% / 12) * 7);
+    }
+    &__input {
+      width: 100%;
+    }
+  }
+}
